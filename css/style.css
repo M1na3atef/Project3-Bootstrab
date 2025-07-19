@@ -1,0 +1,564 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar .nav-name {
+    background:linear-gradient(0deg ,rgb(0, 132, 255),violet);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+.nav .nav-li li a{
+    color: black;
+}
+header {
+    opacity: 0.8;
+    transition: 0.3s;
+    position: relative;
+    z-index: 50;
+}
+
+header:hover {
+    opacity: 1;
+}
+
+.men li a:hover {
+    background-color: #4accffc5;
+}
+.caru h5 {
+    font-family:'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+.caru {
+    background-color: rgba(65, 107, 116, 0.584);
+    z-index: 2;
+}
+.caru-main {
+    position: relative;
+}
+.caru-main::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.27);
+}
+.caru-main img {
+    height: 250%;
+}
+/* /////////////////////////////////////////////////////////// */
+.aside-content {
+    position: relative;
+    right: 25px;
+    z-index: 80;
+    top: 150px;
+}
+.aside-content a {
+    display: block !important;
+    font-size: 55px !important;
+    color: rgba(0, 51, 255, 0.463);
+}
+.aside-content a:hover {
+    color: rgba(0, 51, 255, 0.923);
+}
+/* /////////////////////////////////////////////////////////// */
+
+.sec1 {
+    background-color: rgba(142, 208, 212, 0.744);
+    width: 100%;
+    height: 220px ;
+    padding: 20px 35px 10px 35px;
+    border-radius: 0 0 0 10px;
+}
+.sec1 h3 {
+    background:linear-gradient(0deg , rgb(0, 132, 255),violet);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.sec1 button , .sec3 button {
+    transition: 0.2s;
+    color: #00b7ffc5;
+    background-color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+}
+.sec1 button:hover , .sec3 button:hover{
+    opacity: 0.7;
+}
+/* /////////////////////////////// */
+
+.sec-head {
+    background-color: rgb(68, 160, 176);
+    border-radius: 5px;
+    height: 200px;
+}
+.sec-head h2 {
+    font-size: 40px;
+    width: 85%;
+}
+.accordion-item button {
+    background:linear-gradient(0deg , rgb(0, 132, 255),violet);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+.accordion-item h2 {
+    border-radius: 10px;
+}
+.accordion-button:focus {
+    box-shadow: none !important;
+    border: none !important;
+}
+/* //////////////////////////////////// */
+
+.sec3-head {
+    background-color: rgb(68, 160, 176);
+    border-radius: 5px 5px 0;
+    height: 150px;
+}
+.sec3-head h2 {
+    font-size: 40px;
+    width: 85%;
+}
+.sec3-body {
+    background-color: rgba(146, 199, 202, 0.744);
+    width: 100%;
+    height: 280px ;
+    padding: 20px 35px 10px 35px;
+    border-radius: 0 0 0 10px;
+}
+.sec3-sp {
+    position: relative;
+    /* width: 80px; */
+    z-index: 13;
+}
+.sec3-sp p {
+    position: absolute;
+    top: 30px;
+    left: 100%;
+    border-radius: 0 20px 20px 20px;
+    width: 80px;
+    background-color: rgb(204, 238, 255);
+    color: black !important;
+    padding: 7px 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
+}
+.sec3:hover .sec3 .x{
+    opacity: 1 !important;
+    visibility: visible !;
+}
+.sec3-body input{
+    padding-bottom: 100px;
+}
+.sec3-body span {
+    color: rgb(0, 102, 125);
+}
+.sec3-body p {
+    font-weight: 500;
+}
+.sec3 button:focus {
+    opacity: 0.8;
+}
+.sec3 button:focus .xx{
+    visibility: visible;
+    opacity: 0.9;
+}
+/* /////////////////////////////////////////////// */
+
+.sec4 {
+    background-image: url(../images/Tu\ primera\ vez\ en\ Egipto\,\ los\ imprescindibles\ que….jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    height: 320px;
+    position: relative;
+}
+.sec4::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.sec4-head {
+    background-color: rgb(113, 198, 212);
+    border-radius: 5px 5px 0;
+    height: 140px;
+}
+.sec4-head h2 {
+    font-size: 38px;
+    width: 85%;
+    background:linear-gradient(0deg , rgb(0, 132, 255),rgb(255, 2, 255));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.card-body h5{
+    font-weight: 400;
+}
+.card-body a {
+    width: 110px;
+    font-weight: 500;
+    z-index: 5;
+}
+.card4 {
+    position: relative;
+}
+.card4::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: rgba(0, 225, 255, 0.1);
+    transition: 0.5s;
+}
+.card4:hover::after {
+    width: 100%;
+    height: 100%;
+}
+.card4::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    background-color: rgba(0, 225, 255, 0.1);
+    transition: 0.5s;
+}
+.card4:hover::before {
+    width: 100%;
+    height: 100%;
+}
+/* ////////////////////////////////// */
+
+.phot {
+    background-image: url(../images/1e10b0e5-5a61-42f2-8455-b1d4ba0e1cdc.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    height: 200px;
+    position: relative;
+}
+.phot::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.sec5-head {
+    background-color: rgb(113, 198, 212);
+    border-radius: 5px 5px 0;
+    height: 140px;
+}
+.sec5-head h2 {
+    font-size: 38px;
+    width: 85%;
+    background:linear-gradient(0deg , rgb(0, 132, 255),rgb(255, 2, 255));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sec5-content img {
+    width: 90px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    border: rgb(216, 213, 213) 1.5px solid;
+}
+.sec5-content1{
+    background-image: url(../images/section5/effphot.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 410px;
+    border-radius: 20px;
+}
+.sec5-content2{
+    background-image: url(../images/section5/eff31e5142c-fbcd-439f-a93c-003874f9080c.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 410px;
+    border-radius: 20px;
+}
+.sec5-content3{
+    background-image: url(../images/section5/eff9bc90ee2-6c30-4101-b5ee-174d2a81f834.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 410px;
+    border-radius: 20px;
+}
+.sec5-card {
+    position: relative;
+    transition: 0.5s;
+}
+.sec5-content {
+    position: relative;
+    transition: 0.5s;
+    background-color: transparent;
+}
+.sec5-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(180deg , rgba(10, 100, 110, 0.3),rgba(128, 128, 128, 0.3));
+}
+.sec5-bottom {
+    margin-top: 30% ;
+    margin-left: 2%;
+}
+.sec5-bottom p {
+    margin-top: -5px;
+}
+.card {
+    border: none;
+}
+.sec5-card:hover{
+    transform: scale(0.9);
+}
+.sec5-card:hover .sec5-overlay{
+    background: linear-gradient(180deg , rgba(0, 0, 255, 0.3),rgba(128, 128, 128, 0.3));
+}
+.sec5-card:hover .sec5-headd {
+    transform: translateY(20px) scale(0.95);
+
+}
+.sec5-content .sec5-headd ,.sec5-content p{
+    position: relative;
+    z-index: 3;
+    transition: 0.3s;
+}
+.sec5-card {
+    padding: 0 !important;
+}
+/* ////////////////////////////////////////// */
+
+.sec6-head h2 , .sec7-head h2{
+    font-size: 38px;
+    background:linear-gradient(0deg , rgb(0, 132, 255),rgb(255, 2, 255));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.sec6-card1{
+    /* height: 390px; */
+    height: auto !important;
+    background: linear-gradient(90deg , rgba(184, 231, 251, 0.437),white);
+    border-radius: 15px;
+    /* overflow: hidden; */
+    width: 80%;
+}
+.sec6-text h5 {
+    color: rgb(13, 75, 115);
+}
+.sec6-text span {
+    background-color: rgb(187, 187, 187);
+    color: black;
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: default;
+}
+.sec6-text span:hover {
+    background-color: rgb(142, 142, 142);
+}
+.sec6-text a {
+    background-color: rgb(187, 187, 187);
+    padding: 3px 5px;
+    border-radius: 5px;
+    color: rgb(1, 82, 120);
+    transition: 0.3s;
+    width: 120px;
+}
+.sec6-card1 a:hover {
+    background-color: rgba(0, 99, 169, 0.688);
+    opacity: 0.9;
+    color: white;
+}
+.sec6-t {
+    position: relative;
+    width: 105px;
+}
+.sec6-card1 .sec6-img img , .sec6-card3 .sec6-img img {
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 14% 100%);
+    border-radius:0 15px 15px 0;
+}
+.sec6-card1 .sec6-time{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 50%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: rgba(0, 99, 169, 0.688);
+    transition: 0.6s;
+}
+.sec6-card:hover .sec6-time {
+    width: 100%;
+}
+.sec6-card {
+    transition: 0.5s;
+}
+.sec6-card:hover {
+    transform: scale(1.01);
+}
+.sec6-sm {
+    height: 200px;
+}
+.scrollable-text {
+    height: 75px;
+}
+@media (max-width: 768px) {
+    .scrollable-text {
+        max-height: 120px;
+        overflow-y: auto;
+        padding-right: 8px;
+    }
+}
+.sec6-card2 .sec6-img img {
+    height: 100%;
+    width: 100%;
+    clip-path:  polygon(0 0, 100% 0, 90% 100%, 0 100%);
+    border-radius: 15px 0 0 15px ;
+}
+.sec6-card2 a:hover {
+    background-color: rgba(169, 82, 0, 0.688);
+    opacity: 0.9;
+    color: white;
+}
+.sec6-card2{
+    height: 390px;
+    /* height: auto; */
+    background: linear-gradient(270deg , rgba(255, 220, 188, 0.437),white);
+    border-radius: 15px;
+    /* overflow: hidden; */
+    width: 80%;
+}
+.sec6-card2 .sec6-time{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 50%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: rgba(169, 82, 0, 0.688);
+    transition: 0.6s;
+}
+.sec6-card2 .sec6-t {
+    width: 130px;
+}
+.sec6-card3{
+    height: 390px;
+    background: linear-gradient(90deg , rgba(184, 251, 227, 0.437),white);
+    border-radius: 15px;
+    overflow: hidden;
+    width: 80%;
+}
+.sec6-card3 a:hover {
+    background-color: rgba(0, 169, 85, 0.688);
+    opacity: 0.9;
+    color: white;
+}
+.sec6-card3 .sec6-time{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 50%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: rgba(0, 169, 82, 0.688);
+    transition: 0.6s;
+}
+.sec6-card4 .sec6-img img {
+    height: 100%;
+    width: 100%;
+    clip-path:  polygon(0 0, 100% 0, 90% 100%, 0 100%);
+    border-radius: 15px 0 0 15px ;
+}
+.sec6-card4 a:hover {
+    background-color: rgba(169, 0, 124, 0.688);
+    opacity: 0.9;
+    color: white;
+}
+.sec6-card4{
+    height: 390px;
+    background: linear-gradient(270deg , rgba(255, 188, 215, 0.437),white);
+    border-radius: 15px;
+    overflow: hidden;
+    width: 80%;
+}
+.sec6-card4 .sec6-time{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 50%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: rgba(169, 0, 79, 0.688);
+    transition: 0.6s;
+}
+.sec6-card4 .sec6-t {
+    width: 130px;
+}
+
+/* ////////////////////////////////////////////////////// */
+
+.sec7-card {
+    height: 250px; 
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 35px 0 rgba(0, 76, 255, 0.388);
+}
+.sec7-card img {
+    width: 80px;
+    height: 80px;
+}
+/* /////////////////////////////////////////////////////// */
+
+.foot {
+    height: auto;
+    background-color: rgb(113, 198, 212);
+}
+footer hr {
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+} 
+.copy {
+    background:linear-gradient(0deg , rgb(0, 132, 255),rgb(255, 2, 255));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.foot img {
+    border-radius: 50%;
+    box-shadow: 0 0 20px 0 white;
+    background-color: white;
+}

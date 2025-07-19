@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travigo</title>
+        <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body class="ms-md-1">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #4accff53;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/abd3128d-10db-448b-9bf8-3881aef71f28-removebg-preview.png"  width="50" height="50">
+                </a>
+            <a class="navbar-brand nav-name" href="#">Travigo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-md-5" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll nav-li " style="--bs-scroll-height: 100px; color:#04689073">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="color:#0c4d5f; font-size: 18px">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link " href="#" style="color:#0c4d5f; font-size: 18px">Destination</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link " href="#" style="color:#0c4d5f; font-size: 18px">Packages</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"style="color:#0c4d5f; font-size: 18px" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Trips
+            </a>
+            <ul class="dropdown-menu men" style="background-color: #78d5fa80;" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item "style="color:#0c4d5f; font-size: 18px" href="#">Local</a></li>
+                <li><a class="dropdown-item "style="color:#0c4d5f; font-size: 18px" href="#">International</a></li>
+                <li><a class="dropdown-item" style="color:#0c4d5f; font-size: 18px"href="#">Adventure</a></li>
+                <li><a class="dropdown-item "style="color:#0c4d5f; font-size: 18px" href="#">More...</a></li>
+            </ul>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#"style="color:#0c4d5f; font-size: 18px">About</a>
+            </li>
+        </ul>
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="outline: 0.5px solid #0dcaf0;">
+            <button class="btn btn-info me-2" type="submit" style="color: white;">Search</button>
+            <!-- Button trigger modal -->
+        <button type="button" class="btn btn-info" data-bs-toggle="modal" style="color: white;"data-bs-target="#exampleModal">
+        Login
+        </button>
+
+
+        </form>
+        </div>
+    </div>
+        </nav>
+    </header>
+    <aside>
+        <div class="aside-content position-fixed">
+            <ul>
+                <a href="#" class="fs-1"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#" class="fs-1"><i class="fa-brands fa-square-whatsapp"></i></a>
+                <a href="#" class="fs-1"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="#" class="fs-1"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="fs-1"><i class="fa-brands fa-square-instagram"></i></a>
+            </ul>
+        </div>
+    </aside>
+            <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header bg-info">
+                <h5 class="modal-title " id="exampleModalLabel" style="color: white;">Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label text-info">Email address</label>
+                    <input type="email" class="form-control border-info" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label text-info">Password</label>
+                    <input type="password" class="form-control border-info" id="exampleInputPassword1">
+                </div>
+                <div class="form-check form-switch">
+                <input class="form-check-input bg-info"  type="checkbox" id="flexSwitchCheckChecked" checked>
+                <label class="form-check-label text-info" for="flexSwitchCheckChecked">Remember me</label>
+                </div>
+            </form>
+            </div>
+            <div class="modal-footer d-flex justify-content-between">
+                    <button class="btn btn-info me-2" type="submit" style="color: white;">Login</button>
+                    <button type="button" class="btn btn-info"  style="color: white;"data-bs-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+        </div>
+        <section>
+            <div id="carouselExampleCaptions" class="carousel slide" style="margin-top: 75px;" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active caru-main">
+                    <img src="images/section1/Cidades do Egito_ as mais turísticas para visitar….jpeg" class="d-block w-100 " style="height: 90vh;" alt="...">
+                    <div class="carousel-caption d-md-block caru rounded-3 " style="margin-bottom: 20px; padding: 45px 0;">
+                        <h5 class="fs-1 ">Cairo</h5>
+                        <p class="p-2">Discover the Great Pyramids, the Egyptian Museum, and the heart of Egyptian life.</p>
+                        <button type="button" class="btn btn-info" style="color: white;">Visit Us</button>
+                    </div>
+                    </div>
+                    <div class="carousel-item caru-main">
+                    <img src="images/section1/10 Days will be enough to explore all important….jpeg" class="d-block w-100 " style="height: 90vh;" alt="...">
+                    <div class="carousel-caption  d-md-block caru rounded-3 " style="margin-bottom: 20px; padding: 45px 0;">
+                        <h5 class="fs-1 ">Aswan</h5>
+                        <p class="p-2">Explore the ancient temples, scenic Nile views, and Nubian culture.</p>
+                        <button type="button" class="btn btn-info" style="color: white;">Visit Us</button>
+                    </div>
+                    </div>
+                    <div class="carousel-item caru-main">
+                    <img src="images/section1/fb643d03-de12-4b55-8c67-eec0d563bdab.jpeg" class="d-block w-100 " style="height: 90vh;" alt="...">
+                    <div class="carousel-caption  d-md-block caru rounded-3 " style="margin-bottom: 20px; padding: 45px 0;">
+                        <h5 class="fs-1 ">SHARM EL-SHEIKH</h5>
+                        <p class="p-2">Crystal-clear waters, coral reefs, and vibrant nightlife await you in Sharm El-Sheikh.</p>
+                        <button type="button" class="btn btn-info" style="color: white;">Visit Us</button>
+                    </div>
+                    </div>
+                    <div class="carousel-item caru-main">
+                    <img src="images/section1/bd80bee12f9c317b0c7e3574eeeda237.jpg" class="d-block w-100 " style="height: 90vh;" alt="...">
+                    <div class="carousel-caption  d-md-block caru rounded-3 " style="margin-bottom: 20px; padding: 45px 0;">
+                        <h5 class="fs-1 ">GALALA</h5>
+                        <p class="p-2">Crystal-clear waters, coral reefs, and vibrant nightlife await you in Sharm El-Sheikh.</p>
+                        <button type="button" class="btn btn-info" style="color: white;">Visit Us</button>
+                    </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+        </section>
+        <section>
+            <div class="sec1 rounded-bottom-1" >
+                <h3>WELCOME</h3>
+                <p class="text-white">Are you planning to visit Egypt?
+                We offer the ultimate tour in Egypt, covering Cairo, alex. From a one day trip to a 10 day dream vacation, we will take care of all your needs.
+                book hotels. 24/7 Customer Service..</p>
+                <button type="button" class=" fw-bold">Learn More</button>
+            </div>
+        </section>
+        <hr class="my-3">
+        <section>
+            <div class="sec">
+                <div class="sec-head rounded-5 d-flex justify-content-center align-items-center shadow p-1 mb-3">
+                    <h2 class="text-light text-capitalize text-center">Popular destinations in Egypt</h2>
+                </div>
+                <div class="accordion accordion-flush " id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header shadow p-1  " id="flush-headingOne">
+                        <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Giza City
+                        </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Major tourist destination include the millennia-old monuments in the Nile Valley. Principal among them are the Pyramids and Great Sphinx at Giza</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header shadow p-1" id="flush-headingTwo">
+                        <button class="accordion-button collapsed border-bottom-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            LUXOR CITY
+                        </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Luxor, about 500km south of Cairo, is the site of the ancient city of THebes. it includes the ruins of the temple complexes at Kamak and Luxor,
+                            which stand within the modern city in the opposite side of the Nile River lie the monuments, temples and tomps on the West Bank Necropolis, which include the Valley of the Kings and Valley of the Queens</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header shadow p-1" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            SINAI PENINSULA
+                        </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Sinai has the beach resorts of Sharm ek-Sheikh, Dahab, Nuweiba and Yaba as well as locations mentioned in the Bible such as Mount Sinai ("Jabal Musa"). 
+                            Saint Catherine's Monastery may be the oldest working Chritian monastery in the world</div>
+                        </div>
+                    </div>
+                    </div> <!-- /sec2 -->
+            </div>
+            <hr class="my-3">
+        </section>
+        <section>
+            <div class="sec3">
+                <div class="Eng">
+                    <div class="sec3-head rounded-5 d-flex justify-content-center align-items-center shadow p-1">
+                        <h2 class="text-light text-capitalize text-center">Translate from Arabic to English</h2>
+                    </div> 
+                    <div class="sec3-body">
+                        <p class="fs-4 text-light">Write and Translate <span>Press Here</span></p>
+                        <!-- <div class="sec3-sp"> -->
+                            <div class="modal" tabindex="-1">
+                                <div class="modal-dialogg">
+                                    <div class="modal-contentt">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Modal title</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Modal body text goes here.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="sec3-sp fw-bold">Copy 
+                                <p class="x">copy to cliboard</p>
+                                <p class="xx">copied</p>
+                            </button>
+                        <!-- </div> -->
+                        <form>
+                            <input type="text" placeholder="Translate:" class="form-control mt-3">
+                        </form>
+                    </div>
+                </div> <!-- /Eng -->
+                <hr class="my-3">
+                <div class="Fre">
+                    <div class="sec3-head rounded-5 d-flex justify-content-center align-items-center shadow p-1">
+                        <h2 class="text-light text-capitalize text-center">Translate from Arabic to French</h2>
+                    </div> 
+                    <div class="sec3-body">
+                        <p class="fs-4 text-light">Write and Translate <span>Press Here</span></p>
+                            <!-- <div class="sec3-sp"> -->
+                            <div class="modal" tabindex="-1">
+                                <div class="modal-dialogg">
+                                    <div class="modal-contentt">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Modal title</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Modal body text goes here.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="sec3-sp fw-bold">Copy 
+                                <p class="x">copy to cliboard</p>
+                                <p class="xx">copied</p>
+                            </button>
+                        <!-- </div> -->
+                        <form>
+                            <input type="text" placeholder="Translate:" class="form-control mt-3">
+                        </form>
+                    </div>
+                </div> <!-- /Fre -->
+                <hr class="my-3">
+                <div class="Ger">
+                    <div class="sec3-head rounded-5 d-flex justify-content-center align-items-center shadow p-1">
+                        <h2 class="text-light text-capitalize text-center">Translate from Arabic to German</h2>
+                    </div> 
+                    <div class="sec3-body">
+                        <p class="fs-4 text-light">Write and Translate <span>Press Here</span></p>
+                        <!-- <div class="sec3-sp"> -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="sec3-sp fw-bold">Copy 
+                                <p class="x">copy to cliboard</p>
+                                <p class="xx">copied</p>
+                            </button>
+                        <!-- </div> -->                        <form>
+                            <input type="text" placeholder="Translate:" class="form-control mt-3">
+                        </form>
+                    </div>
+                </div> <!-- /Ger -->
+            </div>
+        </section>
+        <hr class="my-3">
+        <section>
+            <div class="sec4 w-100"></div>
+                <div class="sec4-head rounded-5 d-flex justify-content-center align-items-center shadow p-1 mb-5">
+                    <h2 class=" text-uppercase text-center">popular destinations in egypt</h2>
+                </div> 
+                <div class="container-sm">
+                    <div class="sec4-body row m-auto justify-content-sm-around justify-content-center">
+                        <div class="card card4 col-md-4 col-sm-6 col-12 my-3 shadow p3 mb-5 bg-body rounded" style="width: 22rem;">
+                            <div class="card-content">
+                                <img src="images/section4/Is Egypt on your dream travel list_ 🇪🇬….jpeg" class="card-img-top shadow bg-body rounded" style="border-radius: 5px;" alt="...">
+                                <div class="card-body row justify-content-between">
+                                    <h5 class="card-title text-info fs-4 col-6">CAIRO</h5>
+                                    <a href="#" class="btn btn-info text-light col-6 border-info">Know More</a>
+                                    <p class="card-text fs-6 text-info">Capital of Egypt</p>
+                                </div>
+                            </div>
+                        </div> <!-- card1 -->
+                        <div class="card card4 col-md-4 col-sm-6 col-12 my-3 shadow p3 mb-5 bg-body rounded" style="width: 22rem;">
+                            <div class="card-content">
+                                <img src="images/section4/a18632e1-dd63-4d98-86f1-f693e0785135.jpeg" class="card-img-top shadow bg-body rounded" style="border-radius: 5px;" alt="...">
+                                <div class="card-body row justify-content-between">
+                                    <h5 class="card-title text-info fs-5 col-6">ALEXANDRIA</h5>
+                                    <a href="#" class="btn btn-info text-light col-6 border-info">Know More</a>
+                                    <p class="card-text fs-6 text-info">The bride of the Mediterranean</p>
+                                </div>
+                            </div>
+                        </div><!-- card2 -->
+                        <div class="card card4 col-md-4 col-sm-6 col-12 my-3 shadow p3 mb-5 bg-body rounded" style="width: 22rem;">
+                            <div class="card-content">
+                                <img src="images/section4/b50f30a4-51cb-4696-a552-fe214582d1d1.jpeg" class="card-img-top shadow bg-body rounded" style="border-radius: 5px;" alt="...">
+                                <div class="card-body row justify-content-between">
+                                    <h5 class="card-title text-info fs-4 col-6">LUXOR</h5>
+                                    <a href="#" class="btn btn-info text-light col-6 border-info">Know More</a>
+                                    <p class="card-text fs-6 text-info">The capital of the Ancient Kingdom</p>
+                                </div>
+                            </div>
+                        </div> <!-- card3 -->
+                        <div class="card card4 col-md-4 col-sm-6 col-12 my-3 shadow p3 mb-5 bg-body rounded" style="width: 22rem;">
+                            <div class="card-content">
+                                <img src="images/section4/Beautiful Egypt, nile river aswan nubia visit….jpeg" class="card-img-top shadow bg-body rounded" style="border-radius: 5px;" alt="...">
+                                <div class="card-body row justify-content-between">
+                                    <h5 class="card-title text-info fs-4 col-6">ASWAN</h5>
+                                    <a href="#" class="btn btn-info text-light col-6 border-info">Know More</a>
+                                    <p class="card-text fs-6 text-info">Nubian City in The South of Egypt</p>
+                                </div>
+                            </div>
+                        </div> <!-- card4 -->
+                        <div class="card card4 col-md-4 col-sm-6 col-12 my-3 shadow p3 mb-5 bg-body rounded" style="width: 22rem;">
+                            <div class="card-content">
+                                <img src="images/section4/65380546-2928-4003-a500-f6e9336c1005.jpeg" style="height: 400px" class="card-img-top shadow bg-body rounded" style="border-radius: 5px;" alt="...">
+                                <div class="card-body row justify-content-between">
+                                    <h5 class="card-title text-info fs-5 col-6">NEW CAPITAL</h5>
+                                    <a href="#" class="btn btn-info text-light col-6 border-info">Know More</a>
+                                    <p class="card-text fs-6 text-info">The New Administrative Capital</p>
+                                </div>
+                            </div>
+                        </div><!-- card5 -->
+                        <div class="card card4 col-sm-6 col-md-4 col-12 my-3 shadow p3 mb-5 bg-body rounded" style="width: 22rem;">
+                            <div class="card-content">
+                                <img src="images/section4/Sharm el-Sheikh.jpeg" class="card-img-top shadow bg-body rounded" style="border-radius: 5px;" alt="...">
+                                <div class="card-body row justify-content-between">
+                                    <h5 class="card-title text-info fs-5 col-8" style="margin-left: -5px;">SHARM EL-SHEIKH</h5>
+                                    <a href="#" class="btn btn-info text-light col-2 border-info">Know More</a>
+                                    <p class="card-text fs-6 text-info">Beutiful City in Egypt</p>
+                                </div>
+                            </div>
+                        </div> <!-- card6 -->
+                        <div class="sec4-body row justify-content-sm-around justify-content-center">
+                        <div class="card card4 col-sm-6 col-12 my-3 shadow p3 mb-5 bg-body rounded" style="width: 22rem;">
+                            <div class="card-content">
+                                <img src="images/section4/3b94bb35-d9b8-4d3a-9289-7afdbd6dfe6a.jpeg" style="height: 80%;" class="card-img-top shadow bg-body rounded" style="border-radius: 5px;" alt="...">
+                                <div class="card-body row justify-content-between">
+                                    <h5 class="card-title text-info fs-4 col-6">SIWA</h5>
+                                    <a href="#" class="btn btn-info text-light col-6 border-info">Know More</a>
+                                    <p class="card-text fs-6 text-info">Sunset Oasis</p>
+                                </div>
+                            </div>
+                        </div> <!-- card7 -->
+                        <div class="card card4 col-sm-6 col-12 my-3 shadow p3 mb-5 bg-body rounded" style="width: 22rem;">
+                            <div class="card-content">
+                                <img src="images/section4/d8562863-5b9c-4e0d-8a1d-a68ac7f7d59c.jpeg" style="height: 80%;" class="card-img-top shadow bg-body rounded" style="border-radius: 5px;" alt="...">
+                                <div class="card-body row justify-content-between">
+                                    <h5 class="card-title text-info fs-5 col-6">HURGHADA</h5>
+                                    <a href="#" class="btn btn-info text-light col-6 border-info">Know More</a>
+                                    <p class="card-text fs-6 text-info">City in the Red Sea</p>
+                                </div>
+                            </div>
+                        </div><!-- card8 -->
+                        </div>
+            </div>
+        </div>
+        </section>
+        <div class="phot"></div>
+        <hr class="my-3">
+        <div class="sec5">
+            <div class="sec5-head rounded-5 d-flex justify-content-center align-items-center shadow p-1 mb-5">
+                <h2 class=" text-uppercase text-center">thanks for</h2>
+            </div>
+            <div class="sec5-body container row justify-content-sm-around m-auto justify-content-center">
+                <div class="sec5-card card col-sm-4 col-12 my-2" style="width: 22rem;">
+                    <div class="sec5-overlay"></div>
+                    <div class="sec5-content sec5-content1 container">
+                        <div class="sec5-headd">
+                            <h5 class="card-title mt-5 mb-2 text-light fs-5">All thanks and appreciation</h5>
+                            <p class="text-light"><i class="fa-regular fa-clock"></i> October 15,2022</p>
+                        </div>
+                            <div class="sec5-bottom">
+                                <img src="images/section5/phot.jpeg" >
+                                <p class="mt-2 fs-5 text-light">Eng. Mohamed Ahmed</p>
+                                <p class="fs-6 text-light">Director of travigo</p>
+                            </div>
+                    </div>
+                </div> <!-- card1 -->
+                <div class="sec5-card card col-sm-4 col-12 my-2" style="width: 22rem;">
+                    <div class="sec5-overlay">
+                    </div>
+                    <div class="sec5-content sec5-content2 container">
+                        <div class="sec5-headd">
+                            <h5 class="card-title mt-5 mb-2 text-light fs-5">All thanks and appreciation</h5>
+                            <p class="text-light"><i class="fa-regular fa-clock"></i> January 20,2023</p>
+                        </div>
+                            <div class="sec5-bottom">
+                                <img src="images/section5/31e5142c-fbcd-439f-a93c-003874f9080c.jpeg" >
+                                <p class="mt-2 fs-5 text-light">Eng. Ahmed Mohamed</p>
+                                <p class="fs-6 text-light">HR of travigo</p>
+                            </div>
+                    </div>
+                </div> <!-- card2 -->
+                <div class="sec5-card card col-sm-4 col-12 my-2" style="width: 22rem;">
+                    <div class="sec5-overlay">
+                    </div>
+                    <div class="sec5-content sec5-content3 container">
+                        <div class="sec5-headd">
+                            <h5 class="card-title mt-5 mb-2 text-light fs-5">All thanks and appreciation</h5>
+                            <p class="text-light"><i class="fa-regular fa-clock"></i> November 25,2022</p>
+                        </div>
+                            <div class="sec5-bottom">
+                                <img src="images/section5/9bc90ee2-6c30-4101-b5ee-174d2a81f834.jpeg" >
+                                <p class="mt-2 fs-5 text-light">Eng. Marwan Ahmed</p>
+                                <p class="fs-6 text-light">Media of travigo</p>
+                            </div>
+                    </div>
+                </div> <!-- card3 -->
+            </div>
+        </div>
+        <hr class="my-3">
+        <section>
+            <div class="sec6">
+                <div class="sec6-head">
+                    <h2 class=" text-uppercase text-center mt-5 mb-3">egypt news</h2>
+                </div>
+                <div class="sec6-body">
+                    <div class="sec6-card sec6-card1 container shadow-lg p-0 my-5">
+                        <img class="sec6-sm w-100 d-md-none d-block" src="images/section6/pexels-vika-glitter-392079-18894861.jpg">
+                        <div class="sec6-content row justify-content-between ">
+                            <div class="sec6-text col-md-7 col-12 ms-4 pt-lg-5 pt-md-3 pt-1 pe-5">
+                                <h5 class="fs-4">Must-Visit Cities in Egypt This Summer</h5>
+                                <div class="sec6-t mb-4"><p class="text-muted mb-lg-2 mb-0"><i class="fa-solid fa-calendar-days"></i> July 1, 2025</p>
+                                <p class="sec6-time"></p></div>
+                                <div class="scrollable-text"><p class="card-text flex-grow-1 fs-6 mb-lg-4 mb-1 mt-sm-5 mt-0 ">Get ready to unlock the magic of Egypt! In this feature, we take you through five incredible cities you must explore this summer—from the historic charm of Cairo and Luxor to the coastal serenity of Aswan, the modern vibrancy of Alexandria, and the beach paradise of Sharm El-Sheikh. We break down the best places to visit, what to pack, where to eat, and how to travel smart. Whether you’re a history buff, adventurer, or beach lover, there's something here for every traveler.</p>
+                                <div class="mb-4  pt-lg-4 ">
+                                    <span><i class="fa-solid fa-tag"></i> Travel Tips</span>
+                                    <span><i class="fa-solid fa-clock"></i> 10 mins</span>
+                                    <a href="#" class="text-decoration-none d-sm-inline d-block mt-sm-0 mt-1"><i class="fa-solid fa-play"></i> Play Episode</a>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="d-none d-md-block sec6-img col-4">
+                                <img src="images/section6/pexels-vika-glitter-392079-18894861.jpg">
+                            </div>
+                        </div>
+                    </div> <!-- /card1 -->
+                    <div class="sec6-card sec6-card2 container shadow-lg p-0 my-5">
+                        <img class="sec6-sm w-100 d-md-none d-block" src="images/section6/pexels-andrew-2859169.jpg">
+                        <div class="sec6-content row h-100 justify-content-between ">
+                            <div class="d-none d-md-block sec6-img col-4">
+                                <img src="images/section6/pexels-andrew-2859169.jpg">
+                            </div>
+                            <div class="sec6-text col-md-7 col-12 ms-4 pt-lg-5 pt-md-3 pt-1 pe-5">
+                                <h5 class="fs-4">How Travel Experts Build Unforgettable Trips</h5>
+                                <div class="sec6-t mb-4"><p class="text-muted mb-lg-2 mb-0"><i class="fa-solid fa-calendar-days"></i> June 20th, 2025</p>
+                                <p class="sec6-time"></p></div>
+                                <div class="scrollable-text"><p class="card-text flex-grow-1 fs-6 mb-lg-4 mb-1 mt-sm-5 mt-0 ">Have you ever wondered how your favorite travel experiences are planned? In this episode, we go behind the curtain with industry travel planners to uncover the detailed process of crafting a successful tour. From destination research and route testing to finding reliable local guides and selecting unique experiences, learn how travel professionals build journeys that are smooth, exciting, and full of discovery. It’s travel planning—elevated to an art form.</p>
+                                <div class="mt-0  pt-lg-4  ">
+                                    <span><i class="fa-solid fa-tag"></i> Travel Insights</span>
+                                    <span><i class="fa-solid fa-clock"></i> 45 mins</span>
+                                    <a href="#" class="text-decoration-none d-sm-inline d-block mt-sm-0 mt-1"><i class="fa-solid fa-play"></i> Play Episode</a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- /card2 -->
+                    <div class="sec6-card sec6-card3 container shadow-lg p-0 my-5">
+                        <img class="sec6-sm w-100 d-md-none d-block" src="images/section6/Beach , dahab , egypt , relax , egypt.jpeg">
+                        <div class="sec6-content row h-100 justify-content-between ">
+                            <div class="sec6-text col-md-7 col-12 ms-4 pt-lg-5 pt-md-3 pt-1 pe-5">
+                                <h5 class="fs-4">The Rise of Galala: Egypt’s Newest Tourist Gem</h5>
+                                <div class="sec6-t mb-4"><p class="text-muted mb-lg-2 mb-0"><i class="fa-solid fa-calendar-days"></i> July 1, 2025</p>
+                                <p class="sec6-time"></p></div>
+                                <div class="scrollable-text"><p class="card-text flex-grow-1 fs-6 mb-lg-4 mb-1 mt-sm-5 mt-0 ">Nestled between the mountains and the sea, Galala is Egypt’s newest luxury and adventure destination. In this episode, we explore how Galala went from a quiet coastal region to one of the most exciting spots for resorts, water sports, and eco-tourism. You'll hear from locals and travel experts on what makes Galala special, what to do when you're there, and how Travigo is helping travelers discover this rising gem with curated experiences and top-notch service.</p>
+                                <div class="mt-0  pt-lg-4 ">
+                                    <span><i class="fa-solid fa-tag"></i> Travel Tips</span>
+                                    <span><i class="fa-solid fa-clock"></i> 30 mins</span>
+                                    <a href="#" class="text-decoration-none  d-sm-inline d-block mt-sm-0 mt-1"><i class="fa-solid fa-play"></i> Play Episode</a>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="d-none d-md-block sec6-img col-4">
+                                <img src="images/section6/Beach , dahab , egypt , relax , egypt.jpeg">
+                            </div>
+                        </div>
+                    </div> <!-- /card3 -->
+                    <div class="sec6-card sec6-card4 container shadow-lg p-0 my-5">
+                        <img class="sec6-sm w-100 d-md-none d-block" src="images/section6/20 Awesome Things to do in Dahab, Egypt - 2023….jpeg">
+                        <div class="sec6-content row h-100 justify-content-between ">
+                            <div class="d-none d-md-block sec6-img col-4">
+                                <img src="images/section6/20 Awesome Things to do in Dahab, Egypt - 2023….jpeg">
+                            </div>
+                            <div class="sec6-text col-md-7 col-12 ms-4 pt-lg-5 pt-md-3 pt-1 pe-5">
+                                <h5 class="fs-4">Safety Tips for First-Time Travelers in Egypt</h5>
+                                <div class="sec6-t mb-4"><p class="text-muted mb-lg-2 mb-0"><i class="fa-solid fa-calendar-days"></i> May 10th, 2025</p>
+                                <p class="sec6-time"></p></div>
+                                <div class="scrollable-text"><p class="card-text flex-grow-1 fs-6 mb-lg-4 mb-1 mt-sm-5 mt-0 ">First time in Egypt? Don’t worry—we’ve got you covered. This guide is packed with practical safety tips to help you enjoy your trip with confidence. From navigating busy markets and understanding local etiquette to staying healthy and knowing who to contact in emergencies, this episode equips you with everything you need to know. Learn how Travigo supports travelers 24/7 through our on-the-ground teams and smart travel tools.</p>
+                                <div class="mt-0  pt-lg-4 ">
+                                    <span><i class="fa-solid fa-tag"></i> Travel Safety</span>
+                                    <span><i class="fa-solid fa-clock"></i> 20 mins</span>
+                                    <a href="#" class="text-decoration-none  d-sm-inline d-block mt-sm-0 mt-1"><i class="fa-solid fa-play"></i> Play Episode</a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- /card4 -->
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="sec7">
+                <div class="sec7-head">
+                    <h2 class=" text-uppercase text-center mt-5 mb-3">join us</h2>
+                </div>
+                <div class="sec7-body container row justify-content-sm-around justify-content-center m-auto">
+                    <div class="sec7-card col-sm-3 col-12 my-3">
+                        <h4 class="text-capitalize text-info text-center pt-5 pb-1">subscribe now</h4>
+                        <img src="images/section7/IMG-20250719-WA0002-removebg-preview.png" class="m-auto d-block">
+                        <a href="#" class="text-decoration-none d-block text-info text-center fs-5 pt-2">Go to link</a>
+                    </div> <!-- /card1 -->
+                    <div class="sec7-card col-sm-3 col-12 my-3">
+                        <h4 class="text-capitalize text-info text-center pt-5 pb-1">Follow now</h4>
+                        <img src="images/section7/IMG-20250719-WA0001-removebg-preview.png" class="m-auto d-block">
+                        <a href="#" class="text-decoration-none d-block text-info text-center fs-5 pt-2">Go to link</a>
+                    </div> <!-- /card2 -->
+                    <div class="sec7-card col-sm-3 col-12 my-3">
+                        <h4 class="text-capitalize text-info text-center pt-5 pb-1">Like the Page</h4>
+                        <img src="images/section7/IMG-20250719-WA0003-removebg-preview.png" class="m-auto d-block">
+                        <a href="#" class="text-decoration-none d-block text-info text-center fs-5 pt-2">Go to link</a>
+                    </div> <!-- /card3 -->
+                    <div class="sec7-card col-sm-3 col-12 my-3">
+                        <h4 class="text-capitalize text-info text-center pt-5 pb-1">subscribe now</h4>
+                        <img src="images/section7/IMG-20250719-WA0004-removebg-preview.png" class="m-auto d-block">
+                        <a href="#" class="text-decoration-none d-block text-info text-center fs-5 pt-2">Go to link</a>
+                    </div> <!-- /card4 -->
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="foot mt-3">
+                <div class="foot-content w-100 row justify-content-sm-around justify-content-center">
+                <div class="foot-card pt-2 col-sm-4 col-12">
+                    <hr class="my-2">
+                    <p class="fs-4 text-light text-center"><img src="images/abd3128d-10db-448b-9bf8-3881aef71f28-removebg-preview.png"  width="80" height="80">  Good Company</p>
+                    <hr class="my-3">
+                    <a href="#" class="fs-6 text-center mb-3 text-light text-decoration-none d-block">Tel: +20 000-000-000</a>
+                    <a href="#" class="fs-6 text-center mb-3 text-light text-decoration-none d-block">Address: Cairo, Egypt</a>
+                    <a href="#" class="fs-6 text-center mb-3 text-light text-decoration-none d-block">Fax: +20 000-000-000</a>
+                </div> <!-- /card1 -->
+                <div class="foot-card pt-2 col-sm-4 col-12">
+                    <hr class="my-2">
+                    <p class="fs-4 text-light text-center"><img src="images/abd3128d-10db-448b-9bf8-3881aef71f28-removebg-preview.png"  width="80" height="80">  Important Links</p>
+                    <hr class="my-3">
+                    <a href="#" class="fs-6 text-center mb-3 text-light text-decoration-none d-block">About Us</a>
+                    <a href="#" class="fs-6 text-center mb-3 text-light text-decoration-none d-block">Contact Support</a>
+                    <a href="#" class="fs-6 text-center mb-3 text-light text-decoration-none d-block">FAQs & Help</a>
+                </div> <!-- /card2 -->
+                <div class="foot-card pt-2 col-sm-4 col-12">
+                    <hr class="my-2">
+                    <p class="fs-4 text-light text-center"><img src="images/abd3128d-10db-448b-9bf8-3881aef71f28-removebg-preview.png"  width="80" height="80">   Vision</p>
+                    <hr class="my-3">
+                    <a href="#" class="fs-6 text-center mb-3 text-light text-decoration-none d-block">Delivering the highest service quality</a>
+                    <a href="#" class="fs-6 text-center mb-3 text-light text-decoration-none d-block">Travel made simple for everyone</a>
+                    <a href="#" class="fs-6 text-center mb-3 text-light text-decoration-none d-block">Supporting you every step of your journey</a>
+                </div> <!-- /card3 -->
+            </div>
+            <div class="copy">
+                <hr class="my-3">
+                <h2 class="fs-5 text-center my-2">COPYRIGHT &copy; 2025 GOOD COMPANY. ALL RIGHTS RESERVED. DESIGNED BY MINA ATEF.</h2>
+                <hr class="my-3">
+                <br>
+            </div>
+
+            </div>
+        </footer>
+        <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
+
