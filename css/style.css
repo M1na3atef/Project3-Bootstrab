@@ -19,7 +19,7 @@ header {
     opacity: 0.8;
     transition: 0.3s;
     position: relative;
-    z-index: 50;
+    z-index: 100;
 }
 
 header:hover {
@@ -136,10 +136,9 @@ header:hover {
 }
 .sec3-sp {
     position: relative;
-    /* width: 80px; */
     z-index: 13;
 }
-.sec3-sp p {
+.sec3-sp .xx , .x {
     position: absolute;
     top: 30px;
     left: 100%;
@@ -152,9 +151,13 @@ header:hover {
     opacity: 0;
     transition: 0.2s;
 }
-.sec3:hover .sec3 .x{
-    opacity: 1 !important;
-    visibility: visible !;
+.sec3 button:hover .x{
+    opacity: 0.9;
+    visibility: visible ;
+}
+.sec3 button:focus .x{
+    opacity: 0;
+    visibility: hidden ;
 }
 .sec3-body input{
     padding-bottom: 100px;
@@ -534,10 +537,14 @@ header:hover {
     width: 250px;
     border-radius: 10px;
     box-shadow: 0 0 35px 0 rgba(0, 76, 255, 0.388);
+    transition: 0.3s;
 }
 .sec7-card img {
     width: 80px;
     height: 80px;
+}
+.sec7-card:hover {
+    transform: scale(1.1);
 }
 /* /////////////////////////////////////////////////////// */
 
